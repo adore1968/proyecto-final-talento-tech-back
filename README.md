@@ -29,7 +29,8 @@ Dividí las rutas en dos archivos principales: <br>
 - ``` GET /api/products``` Lista todos los productos.
 - ``` GET /api/products/:id``` Devuelve un producto por ID.
 - ``` POST /api/products/create``` Crea un nuevo producto.
-- ``` DELETE /api/products/``` id Elimina un producto por ID.
+- ``` PUT /api/products/:id``` Actualiza un producto por ID.
+- ``` DELETE /api/products/:id``` Elimina un producto por ID.
 
 
 ```auth.routes.js ```
