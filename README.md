@@ -52,7 +52,7 @@ Dividí las rutas en dos archivos principales: <br>
 - En el controlador de login, validé credenciales y devolví un Bearer Token si son válidas.
 
 ### 8. Despliegue a producción
--Configuré el archivo vercel.json.
+- Configuré el archivo vercel.json.
 - Subí el proyecto a Vercel.
 - Realicé el despliegue a producción exitosamente.
 
