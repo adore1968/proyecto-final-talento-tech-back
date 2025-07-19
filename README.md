@@ -12,18 +12,18 @@ Este proyecto fue desarrollado como parte del **programa Talento Tech** en la es
 - Agregué `"type": "module"` al `package.json` para habilitar ESModules.
 - Definí un script llamado `start` para ejecutar el servidor con `npm run start`.
 
-2. Instalación de dependencias
+### 2. Instalación de dependencias
 Instalé las siguientes dependencias necesarias para el desarrollo del backend:
 ``` npm install express cors body-parser dotenv firebase jsonwebtoken ```
 
-4. Configuración del servidor
+### 3. Configuración del servidor
 - Configuré Express en index.js para crear el servidor.
 - Habilité CORS para permitir peticiones desde orígenes externos.
 - Usé body-parser para interpretar JSON en los cuerpos de las peticiones.
 - Agregué un middleware global para manejar rutas desconocidas con estado 404.
 - Incorporé un archivo .env para gestionar variables de entorno sensibles.
 
-4. Rutas
+### 4. Rutas
 Dividí las rutas en dos archivos principales: <br>
 ```products.routes.js```
 - ``` GET /api/products``` Lista todos los productos.
@@ -36,22 +36,22 @@ Dividí las rutas en dos archivos principales: <br>
 ```auth.routes.js ```
 - ``` POST /auth/login``` Recibe credenciales y devuelve un token JWT si son válidas.
 
-5. Controladores y Servicios
+### 5. Controladores y Servicios
 - Implementé una capa de controladores que maneja la lógica de las rutas.
 - Separé la lógica de negocio en una capa de servicios, para una mejor organización y reutilización del código.
 
-6. Acceso a los datos
+### 6. Acceso a los datos
 - Creé un proyecto en Firebase Firestore y configuré una colección para los productos.
 - Añadí un documento inicial para definir la estructura y tipos de datos.
 - Escribí funciones en la capa de modelos para interactuar con la base de datos.
 - Enlacé los modelos con los servicios para completar el flujo de datos.
 
-7. Protección de rutas
+### 7. Protección de rutas
 - Configuré JWT en el proyecto.
 - Implementé un middleware que protege rutas sensibles.
 - En el controlador de login, validé credenciales y devolví un Bearer Token si son válidas.
 
-8. Despliegue a producción
+### 8. Despliegue a producción
 -Configuré el archivo vercel.json.
 - Subí el proyecto a Vercel.
 - Realicé el despliegue a producción exitosamente.
